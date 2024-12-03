@@ -29,7 +29,7 @@ func TestIsLevelUnsafe(t *testing.T) {
 		t.Run(test.name, func(t *testing.T) {
 			got := isLevelUnsafe(test.direction, test.cur, test.prev)
 			if got != test.want {
-				t.Fatalf("isLevelUnsafe(%s, %d, %d), want '%t' got %t", test.direction, test.cur, test.prev, test.want, got)
+				t.Fatalf("isLevelUnsafe('%s', %d, %d), want '%t' got %t", test.direction, test.cur, test.prev, test.want, got)
 			}
 		})
 	}
